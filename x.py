@@ -22,7 +22,7 @@ def get_config():
 API_BASE_URL = 'https://api.x.com'
 
 
-@mcp.tool()
+@mcp.tool(description="Get recent x posts given a keyword")
 async def get_recent(keywords: str) -> str:
     """
     Get recent x posts given a keyword
